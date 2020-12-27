@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click And Get Score</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/686509c997.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="profile float-left text-white"><i class="fas fa-user-tie"></i> My Profile</a>
+                    <ul class="list-inline float-left">
+                        <li class="list-inline-item"><a href="#" class=" text-white">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class=" text-white">About</a></li>
+                        <li class="list-inline-item"><a href="#" class=" text-white">Services</a></li>
+                        <li class="list-inline-item"><a href="#" class=" text-white">Contact</a></li>
+                        <li class="list-inline-item"><a href="#" class=" text-white">Portfolio</a></li>
+                    </ul>
+                    <span class="float-right">
+                        <h4>Your Score: <span id="score">00</span></h4>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timer-show text-center">Your score will add after seconds !</div>
+    <div class="adsWrapper">
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg1.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <a id="ads-button" onclick="scoreEarn()" class="btn btn-success text-white mt-4">VISIT
+                                    ADS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg4.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg1.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg4.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg5.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg1.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg5.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="adsField">
+            <div class="container">
+                <div class="wrapper mt-5">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/bg4.jpg" alt="img" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="justify-content-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Beatae aliquam dolor iure est nobis quia doloribus debitis error numquam id quod, unde
+                                quis
+                                ipsam cum velit saepe tenetur porro. Consequuntur saepe hic ipsam omnis quam?</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <button id="ads-button" onclick="scoreEarn()" class="btn btn-success mt-4">VISIT
+                                    ADS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

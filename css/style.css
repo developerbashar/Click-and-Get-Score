@@ -1,0 +1,38 @@
+a.profile {
+    margin-right: 130px;
+}
+div#header {
+    padding: 26px 0px;
+    background: #0a2a47;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+}
+.adsWrapper {
+    margin-top: 12%;
+    margin-bottom: 6%;
+}
+.wrapper {
+    box-shadow: 0px 4px 11px 1px grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.timer-show {
+    display: none;
+    background: #99760e;
+    color: white;
+    width: 50%;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 99999;
+    left: 25%;
+    top: 50%;
+    margin: auto;
+    font-size: 30px;
+}
+
+
+/* Your score will add after 5 seconds ! */
